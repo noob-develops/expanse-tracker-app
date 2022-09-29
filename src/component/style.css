@@ -1,0 +1,158 @@
+span{
+    font-size: 1.6rem;
+}
+
+.Currnent-Balance{
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.heading-3{
+    font-size: 1.5rem;
+    
+}
+.upper{
+   text-transform: uppercase;
+}
+.amount{
+    font-size: 1.7rem;
+}
+.balance-sum{
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    max-width: 30rem;
+    padding: .8rem 0;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.left::after{
+    position: absolute;
+    top: 5px;
+    right: 50%;
+    content: " ";
+    height: 80%;
+    width: 1px;
+    background: black;
+}
+
+.trasnactions{
+    margin: 4rem 0;
+    min-height: 10rem;
+}
+.hr{
+    width: 100%;
+    margin: 1rem auto;
+    background: gray;
+}
+.trans-ul{
+    margin: 2rem 0;
+}
+.item{
+    position: relative;
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: .4rem .8rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.2);
+}
+.item.income::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: " ";
+    height: 100%;
+    width: 3px;
+    background: green;
+}
+.item.expanse::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: " ";
+    height: 100%;
+    width: 3px;
+    background: red;
+}
+.income:hover{
+    background: green;
+    color: #fff;
+}
+.expanse:hover{
+      background: orangered;
+    color: #fff;
+}
+
+.add-transaction{
+    
+    font-size: 1.6rem;
+}
+form{
+    text-align: left;
+}
+input{
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+    padding: .6rem 1rem;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    cursor: pointer;
+    width: 100%;
+    padding: .8rem 1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: royalblue;
+}
+.remove-btn{
+    position: absolute;
+    top: 10%;
+    left: -1.2rem;
+    padding: .1rem;
+    background:orangered;
+    color: #f1f5f8;
+    cursor: pointer;
+    
+}
+
+/* media queries */
+
+@media (max-width:25em) {
+    .container{
+        padding: 0 1rem;
+    }
+    h3{
+        font-size: 1.7rem;
+        margin: 1rem 0;
+    }
+    .Currnent-Balance{
+        text-align: left;
+    }
+    .heading-3{
+        font-size: 1.2rem;
+    }
+    .amount-top{
+        font-size: 2rem;
+    }
+    .trasnactions{
+        margin: 2rem 0;
+    }
+   
+    
+    .trans-ul{
+        padding: 0 0 0 1.2rem;
+         overflow-y: scroll;
+         max-height: 12rem;
+         margin: 0 -0.2rem;
+        
+    }
+}
